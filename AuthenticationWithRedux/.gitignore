@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+
+# iOS
+ios/Pods/
+ios/build/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Testing
+coverage/
+__tests__/results/
+
+# Keystore files
+*.keystore
+*.jks
