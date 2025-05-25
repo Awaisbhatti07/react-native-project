@@ -5,10 +5,9 @@ import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 // NativeStackNavigationProp: Used to type only the navigation object (e.g. with useNavigation).
-
 // NativeStackScreenProps: Used to type both navigation and route props in a screen component.
 
-import {RootStackParamList} from '../../navigations/type'; // yeh import karo
+import {RootStackParamList} from '../../navigations/type';
 
 type SplashScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList, 'Splash'>;
@@ -54,19 +53,18 @@ export default Splash;
 /*
 
 1. NativeStackNavigationProp
-🔹 Sirf navigation object ko type karne ke liye use hota hai
+Sirf navigation object ko type karne ke liye use hota hai
 Agar aapko sirf navigation chahiye, aur route ki zarurat nahi hai, to aap NativeStackNavigationProp use karte hain.
 
-💡 Use case:
+Use case:
 Aap component me navigation.replace() ya navigation.navigate() use kar rahe hain.
-
 Route params ki zarurat nahi.
 
 2. NativeStackScreenProps
-🔹 navigation aur route dono ko type karne ke liye use hota hai
+navigation aur route dono ko type karne ke liye use hota hai
 Agar aap functional component ke props me navigation aur route dono chahte hain, to NativeStackScreenProps use karte hain.
 
-💡 Use case:
+Use case:
 Jab aap kisi screen ko params ke sath navigate karte ho.
 
 Ya jab aap props.route.params.xyz access karna chahte ho.

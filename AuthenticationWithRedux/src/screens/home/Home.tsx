@@ -1,14 +1,29 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {View, Pressable, FlatList} from 'react-native';
 import React from 'react';
+import styles from '../home/styles/homeStyles';
 
-export default function home() {
+import {SafeAreaView} from 'react-native-safe-area-context';
+
+import ProductItem from '../../components/ProductItem';
+import { PRODUCTS_LIST } from '../../constants/HomeDummyData';
+
+export default function Home() {
   return (
-    <View style={styles.container}>
-      <Text>home</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View>
+        <FlatList
+          data={PRODUCTS_LIST}
+          keyExtractor={item => item.id.toString()}
+          showsVerticalScrollIndicator={false}
+          renderItem={({item}) => {
+            return (
+              <Pressable>
+                <ProductItem product={item} />
+              </Pressable>
+            );
+          }}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {},
-});
