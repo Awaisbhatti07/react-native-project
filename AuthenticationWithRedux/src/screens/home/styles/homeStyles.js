@@ -6,4 +6,9 @@ export default StyleSheet.create({
     padding: 12,
     backgroundColor: '#FFFFFF',
   },
+  headerText: {
+    fontSize: 30,
+    fontWeight: '700',
+    marginVertical: 10,
+  },
 });

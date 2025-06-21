@@ -42,8 +42,7 @@ export default function ProductItem({product}: ProductProps) {
 const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
-    marginVertical: 8,
-    marginHorizontal: 8,
+    marginVertical: 6,
     padding: 10,
     gap: 8,
     borderRadius: 10,

@@ -30,8 +30,8 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;
 
 const Login = () => {
   // State for user input
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [userName, setUserName] = useState('emilys');
+  const [password, setPassword] = useState('emilyspass');
   const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();

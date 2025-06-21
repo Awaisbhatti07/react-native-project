@@ -43,3 +43,7 @@ interface Meta {
   barcode: string;
   qrCode: string; // Image
 }
+
+export interface ProductsState {
+  products: Product[];
+}
